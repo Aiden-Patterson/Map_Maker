@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://js.arcgis.com/4.24/"></script>
     <script>
-      import data from "places.json";
       require([
         "esri/config",
         "esri/Map",
@@ -31,14 +30,17 @@
           zoom: 13, // Zoom level
           container: "viewDiv", // Div element
         });
+
+        const obj = JSON.parse('places.json');
+
         const graphicsLayer = new GraphicsLayer();
         map.add(graphicsLayer);
 
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < obj.church.length; i++) {
           const point = {
             type: "point",
-            longitude: data["coords"[i][1]],
-            latitude: data["coords"[i][0]],
+            longitude: obj.church[i].coords[1],
+            latitude: obj.church[i].coords[0],
           };
           const simpleMarkerSymbol = {
             color: [226, 119, 40],
