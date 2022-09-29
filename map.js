@@ -6,7 +6,7 @@ require(["esri/config","esri/Map", "esri/views/MapView"], function (esriConfig, 
 
     const view = new MapView({
         map: map,
-        center: [43.830107,-111.8232022],
+        center: [-118.805, 34.027],
         zoom: 13,
         container: "viewDiv"
     });
