@@ -37,7 +37,7 @@
         const graphicsLayer = new GraphicsLayer();
         map.add(graphicsLayer);
 
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < obj.church.length; i++) {
           const point = {
             type: "point",
             longitude: obj.church[i].coords[1],
