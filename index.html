@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://js.arcgis.com/4.24/"></script>
     <script>
+      import data from "places.json";
       require([
         "esri/config",
         "esri/Map",
@@ -33,24 +34,26 @@
         const graphicsLayer = new GraphicsLayer();
         map.add(graphicsLayer);
 
-        const point = {
-          type: "point",
-          longitude: -111.7792058,
-          latitude: 43.81064,
-        };
-        const simpleMarkerSymbol = {
-          color: [226, 119, 40],
-          outline: {
-            color: [255, 255, 255],
-            width: 1,
-          },
-        };
+        for (let i = 0; i < data.length; i++) {
+          const point = {
+            type: "point",
+            longitude: data["coords"[i][1]],
+            latitude: data["coords"[i][0]],
+          };
+          const simpleMarkerSymbol = {
+            color: [226, 119, 40],
+            outline: {
+              color: [255, 255, 255],
+              width: 1,
+            },
+          };
 
-        const pointGraphic = new Graphic({
-          geometry: point,
-          symbol: simpleMarkerSymbol,
-        });
-        graphicsLayer.add(pointGraphic);
+          const pointGraphic = new Graphic({
+            geometry: point,
+            symbol: simpleMarkerSymbol,
+          });
+          graphicsLayer.add(pointGraphic);
+        }
       });
     </script>
   </head>
