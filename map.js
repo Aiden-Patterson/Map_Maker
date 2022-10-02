@@ -45,3 +45,24 @@ require([
     graphicsLayer.add(pointGraphic);
   }
 });
+
+function newPlace() {
+  var address = document.getElementById("address").value;
+  var coords = [document.getElementById("lat").value, document.getElementById("long").value];
+  let place = { address: address, coords: coords };
+  obj.church.push(place);
+  console.log(obj.church);
+}
+
+//document.getElementById("placeForm").addEventListener("submit", function (event) {
+    //event.preventDefault();
+    //newPlace(event.target);
+  //});
+
+  //submit.onclick = function(){
+ //   var address = document.getElementById("address").value;
+  //  var coords = [document.getElementById("lat").value, document.getElementById("long").value];
+  //  let place = { address: address, coords: coords };
+  //  obj.church.push(place);
+ // }
+  document.querySelector('#submit').addEventListener("click", newPlace())

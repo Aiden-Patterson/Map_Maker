@@ -13,7 +13,20 @@
   </head>
   <body>
     <h1>Map of Rexburg</h1>
-    <div id="viewDiv"></div>
-    <button>Add new Location</button>
+
+    <div class="grid-container">
+      <div class = "grid-item" id="viewDiv"></div>
+      <div class = "grid-item">
+        <form id = "placeForm">
+          <button id="submit">Add new location</button>
+          <label for="long">Longitude(negative number)</label><br />
+          <input type="number" step ="any" id="long" name="long" /><br />
+          <label for="lat">Latitude</label><br />
+          <input type="number" step = "any" id="lat" name="lat" /><br />
+          <label for="address">Address</label><br />
+          <input type="text" id="address" name="address" /><br />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
