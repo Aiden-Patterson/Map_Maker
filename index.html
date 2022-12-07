@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://js.arcgis.com/4.24/"></script>
     <script type="module" src="map.js"></script>
+
+
+    
   </head>
   <body>
     <h1>Map of Rexburg</h1>
@@ -19,6 +22,8 @@
       <div class = "grid-item">
         <form id = "placeForm">
           <button id="submit">Add new location</button>
+          <label for="name">Name at location</label><br />
+          <input type="text" id="name" name="name" /><br />
           <label for="long">Longitude(negative number)</label><br />
           <input type="number" step ="any" id="long" name="long" /><br />
           <label for="lat">Latitude</label><br />

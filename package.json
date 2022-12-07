@@ -1,0 +1,23 @@
+{
+  "name": "gis",
+  "version": "1.0.0",
+  "description": "{This is a program that is testing out the basics of both ARCGIS as well as Firebase databases to create a program that shows a map with locations that the user inputs}",
+  "main": "map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aiden-Patterson/Map_Maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aiden-Patterson/Map_Maker/issues"
+  },
+  "homepage": "https://github.com/Aiden-Patterson/Map_Maker#readme",
+  "dependencies": {
+    "firebase": "^9.12.1"
+  }
+}
