@@ -10,7 +10,7 @@ I build this software to test out arcGIS and what it is capable of doing
 
 # Development Environment
 
-I used HTML and javascript in order to complete this assignment. I also used JSON in order to save a list of each place marked out on the map. I used argGIS to create the map and used built in graphic capabilities to draw the points on the map. I used Firebase databases to save the GPS coordinate data and the address information to the location so that the software can pull everything from the database
+I used HTML and javascript in order to complete this assignment. I used argGIS to create the map and used built in graphic capabilities to draw the points on the map. I used Firebase databases to save the GPS coordinate data and the address information to the location so that the software can pull everything from the database
 # Useful Websites
 * [W3 Schools: JSON](https://www.w3schools.com/js/js_json_intro.asp)
 * [W3 Schools: Javascript](https://www.w3schools.com/js/default.asp)
